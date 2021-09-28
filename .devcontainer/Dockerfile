@@ -7,3 +7,4 @@ RUN apt update && apt upgrade -y && apt install default-jdk -y
 
 RUN npm i -g androidjs-builder npm 
 
+ENTRYPOINT npm i 
