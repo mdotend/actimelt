@@ -18,7 +18,10 @@
 		"GitLab.gitlab-workflow",
 		"Gruntfuggly.todo-tree",
 		"mhutchie.git-graph",
-		"yzhang.markdown-all-in-one"
+		"yzhang.markdown-all-in-one",
+		"hbenl.vscode-test-explorer",
+		"ms-vscode.test-adapter-converter",
+		"hbenl.vscode-mocha-test-adapter"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.

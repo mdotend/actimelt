@@ -14,7 +14,7 @@
     "scripts": {
         "start:dev": "node .",
         "build": "androidjs build",
-        "test": "node test.js|bunyan"
+        "test": "mocha --exit"
     },
     "author": "",
     "license": "ISC",
@@ -24,9 +24,12 @@
         "mongoose": "^6.0.8"
     },
     "devDependencies": {
+        "chai": "^4.3.4",
+        "chai-as-promised": "^7.1.1",
         "eslint": "^7.32.0",
         "eslint-config-airbnb-base": "^14.2.1",
-        "eslint-plugin-import": "^2.24.2"
+        "eslint-plugin-import": "^2.24.2",
+        "mocha": "^9.1.2"
     },
     "project-name": "ActiMelt",
     "theme": {
