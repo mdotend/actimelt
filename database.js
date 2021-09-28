@@ -14,6 +14,10 @@ const EventSchema = new mongoose.Schema({
     type: Date,
     required: true,
   },
+  coordinates: {
+    long: Number,
+    lat: Number,
+  },
   comments: [{ body: String, date: Date }],
   host: {
     type: String,
