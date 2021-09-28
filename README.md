@@ -27,9 +27,54 @@ Backend
 - Darstellung im Screencast
 ## Stack
 Frontend:
-- AndroidJS
-- Mongoose
+- CSS
 - Leaflet
 
 Backend:
 - MongoDB
+- NodeJS
+  - Mongoose
+  - AndroidJs
+
+## Data Structure
+```js
+const EventSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  city: {
+    type: String,
+    required: true,
+  },
+  location: {
+    enum: ['Point'], // FIXME vllt falsch
+  },
+  eventDate: {
+    type: Date,
+    required: true,
+  },
+  comments: [{ body: String, date: Date }],
+  host: {
+    type: String,
+    required: true,
+  },
+  imageUrl: String,
+  meta: {
+    created: { type: Date, default: Date.now },
+    favs: { type: Number, defaul: 0 },
+  },
+});
+```
+### Filter
+- Ort - GeoPoint
+  - Umkreis
+- 
+- Art
+- Zeitraum
+- Host
+- Tags
