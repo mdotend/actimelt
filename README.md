@@ -25,3 +25,11 @@ Backend
 - Innovationsgehalt der Lösung
 - Nachhaltigkeitspotential
 - Darstellung im Screencast
+## Stack
+Frontend:
+- AndroidJS
+- Mongoose
+- Leaflet
+
+Backend:
+- MongoDB
