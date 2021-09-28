@@ -19,3 +19,12 @@ Frontend
     - Listenansicht
 Backend
 - Datenbank
+
+## Stack
+Frontend:
+- AndroidJS
+- Mongoose
+- Leaflet
+
+Backend:
+- MongoDB
