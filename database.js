@@ -1,5 +1,9 @@
 const mongoose = require('mongoose');
 
+const bunyan = require('bunyan');
+
+const log = bunyan.createLogger({ name: 'database' });
+
 // db schemas
 const EventSchema = new mongoose.Schema({
   name: {
@@ -31,18 +35,27 @@ const Event = mongoose.model('Event', EventSchema);
 
 // db functions
 async function dbConnect() {
-  await mongoose.connect('mongodb://217.79.181.125:27017');
+  try {
+    await mongoose.connect('mongodb://217.79.181.125:27017');
+  } catch (error) {
+    log.error(error);
+  }
 }
 
 async function addEvent(pObject) {
-  const newEvent = new Event(pObject);
-  const newId = newEvent.id;
-  await newEvent.save();
-  return newId;
+  try {
+    const newEvent = new Event(pObject);
+    const newId = newEvent.id;
+    await newEvent.save();
+    return newId;
+  } catch (error) {
+    log.error(error);
+    return null;
+  }
 }
 
 async function getEvents() {
-  console.log(await Event.find());
+  log.info(await Event.find());
 }
 
 // export

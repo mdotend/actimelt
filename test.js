@@ -1,8 +1,11 @@
+const bunyan = require('bunyan');
 const db = require('./database');
+
+const log = bunyan.createLogger({ name: 'test.js' });
 
 async function main() {
   db.dbConnect();
-  console.log(await db.addEvent('asd'));
+  log.info(await db.addEvent('asd'));
   db.getEvents();
 }
 

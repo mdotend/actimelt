@@ -13,18 +13,20 @@
     "main": "main.js",
     "scripts": {
         "start:dev": "node .",
-        "build": "androidjs build"
+        "build": "androidjs build",
+        "test": "node test.js|bunyan"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "androidjs": "^2.0.2",    
+        "androidjs": "^2.0.2",
+        "bunyan": "^1.8.15",
         "mongoose": "^6.0.8"
-    },  
+    },
     "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.24.2"
+        "eslint": "^7.32.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-import": "^2.24.2"
     },
     "project-name": "ActiMelt",
     "theme": {

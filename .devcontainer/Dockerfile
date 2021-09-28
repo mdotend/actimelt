@@ -5,6 +5,6 @@ FROM node:16-buster
 
 RUN apt update && apt upgrade -y && apt install default-jdk -y
 
-RUN npm i -g androidjs-builder npm 
+RUN npm i -g androidjs-builder npm bunyan
 
 ENTRYPOINT npm i 
