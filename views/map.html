@@ -27,16 +27,29 @@
 
 
 <body>
-
+    <!-- create basic leaflet structure -->
     <div id='mapid' style='height: 800px; width: 100%;'></div>
-    <!-- OSM-Basiskarte einfügen und zentrieren -->
     <script type='text/javascript'>
-       var eventMap = L.map('mapid').setView([51.75840, 6.39612], 15);
+       var eventMap = L.map('mapid').setView([52.520007, 13.404954], 12);
        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
        'attribution':  'Kartendaten &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> Mitwirkende',
        'useCache': true
        }).addTo(eventMap);
     </script>
+
+    <!-- add marker to map -->
+    <script type='text/javascript' src='lib/database.js'></script>
+    <script type='text/javascript' async>
+        const eventList = filterEmptyLocation();
+        console.log(eventList);
+        for(event in eventList => {
+            console.log(event)
+            L.geoJSON(event.location).addTo(eventMap);
+        }
+        );
+     </script>
+
+
 </body>
 
 </html>
