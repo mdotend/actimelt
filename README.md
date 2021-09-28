@@ -19,3 +19,9 @@ Frontend
     - Listenansicht
 Backend
 - Datenbank
+
+## Bewertungskriterien *(je 25%)*
+- Qualität der Software
+- Innovationsgehalt der Lösung
+- Nachhaltigkeitspotential
+- Darstellung im Screencast

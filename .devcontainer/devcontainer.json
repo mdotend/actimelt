@@ -14,10 +14,11 @@
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"dbaeumer.vscode-eslint",
-    "eamodio.gitlens",
-    "GitLab.gitlab-workflow",
-    "Gruntfuggly.todo-tree",
-    "mhutchie.git-graph",
+		"eamodio.gitlens",
+		"GitLab.gitlab-workflow",
+		"Gruntfuggly.todo-tree",
+		"mhutchie.git-graph",
+		"yzhang.markdown-all-in-one"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
