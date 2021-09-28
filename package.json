@@ -7,7 +7,9 @@
     "icon": "./assets/icon/icon.png",
     "dist-path": "./dist",
     "permission": [
-        "android.permission.INTERNET"
+        "android.permission.INTERNET",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_EXTERNAL_STORAGE"
     ],
     "description": "",
     "main": "main.js",
@@ -18,13 +20,14 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "androidjs": "^2.0.2",    
+        "androidjs": "^2.0.2",
         "mongoose": "^6.0.8"
-    },  
+    },
     "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.24.2"
+        "androidjs-builder": "^2.2.4",
+        "eslint": "^7.32.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-import": "^2.24.2"
     },
     "project-name": "ActiMelt",
     "theme": {
