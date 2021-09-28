@@ -2,8 +2,28 @@ const mongoose = require('mongoose');
 
 // db schemas
 const EventSchema = new mongoose.Schema({
-  name: String,
-  description: String,
+  name: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  eventDate: {
+    type: Date,
+    required: true,
+  },
+  comments: [{ body: String, date: Date }],
+  host: {
+    type: String,
+    required: true,
+  },
+  // TODO: TitleImage
+  meta: {
+    created: { type: Date, default: Date.now },
+    favs: { type: Number, defaul: 0 },
+  },
 });
 
 // init models
@@ -14,8 +34,8 @@ async function dbConnect() {
   await mongoose.connect('mongodb://217.79.181.125:27017');
 }
 
-async function addEvent(pName) {
-  const newEvent = new Event({ name: pName, description: 'Hello there' });
+async function addEvent(pObject) {
+  const newEvent = new Event(pObject);
   const newId = newEvent.id;
   await newEvent.save();
   return newId;
