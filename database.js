@@ -23,7 +23,7 @@ const EventSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  // TODO: TitleImage
+  imageUrl: String,
   meta: {
     created: { type: Date, default: Date.now },
     favs: { type: Number, defaul: 0 },
