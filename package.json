@@ -1,0 +1,33 @@
+{
+    "version": "1.0.0",
+    "name": "ActiMelt",
+    "app-name": "ActiMelt",
+    "package-name": "webview",
+    "project-type": "webview",
+    "icon": "./assets/icon/icon.png",
+    "dist-path": "./dist",
+    "permission": [
+        "android.permission.INTERNET"
+    ],
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "start:dev": "node .",
+        "build": "androidjs build"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "androidjs": "^2.0.2",    
+        "mongoose": "^6.0.8"
+    },  
+    "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2"
+    },
+    "project-name": "ActiMelt",
+    "theme": {
+        "fullScreen": true
+    }
+}
