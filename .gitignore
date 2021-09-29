@@ -120,3 +120,4 @@ dist
 
 #own 
 package-lock.json
+lib/test.js
