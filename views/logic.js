@@ -1,4 +1,10 @@
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable no-loop-func */
+front.on('updateView', (data) => {
+  CreateTableFromJSON(data);
+  console.log(data);
+});
+
 function myFunction() {
   const x = document.getElementById('myLinks');
   if (x.style.display === 'block') {
@@ -44,4 +50,5 @@ function submitForm() {
     tag, stadt, zeitStart, zeitEnde,
   };
   console.log(json);
+  front.send('submitTest', json);
 }
