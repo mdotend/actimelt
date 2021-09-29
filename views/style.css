@@ -18,7 +18,10 @@
     font-size: 17px;
     display: block;
   }
-  
+  .font {
+    font-family: 'Monoton', cursive;
+    font-size: 50px;
+  }
   /* Style the hamburger menu */
   .topnav a.icon {
     background: none;
@@ -129,3 +132,7 @@
   font-size: 13px;
 }
 
+.app{
+  font-size:10px;
+}
+  #mapid { height: 100%; width: 100%;}
