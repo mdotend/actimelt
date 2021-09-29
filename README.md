@@ -7,7 +7,7 @@ Das Problem, dass dieses Projekt zu lösen hofft, ist die schlechte Übersicht f
 ## Ansatz
 Eine Smartphone-App soll den Zugang für die Bürgerinnen vereinfachen, indem dort Events, die von den Versanstaltern eingetragen werden können, gesammelt und nach Vorlieben gefiltert werden können.
 ### Vorteile
-Dadurch erhoffen wir uns einen erleichterten Zugang zu politischer Partizipation und eine brietere öffentliche Beteiligung.
+Dadurch erhoffen wir uns einen erleichterten Zugang zu politischer Partizipation und eine breitere öffentliche Beteiligung.
 Ein weiterer Vorteil kann die inter-aktivistische Vernetzung sein.
 
 ## Scope
@@ -38,10 +38,10 @@ Nach der Ideenfindung haben wir uns für eine Smartphone-App als Produkt-Form en
 Durch eine einheitliche Programmierumgebung in Docker hatten wir keine Probleme mit der Kollaboration an dem Code.
 
 ## Probleme
-Die Applikation ist im Moment ledigleich ein Prototyp, der hauptsächlich die Idee der Applikation veranschaulichen soll. Die Verbindung zwischen dem Frontend und der Datenbank hat bisher leider nur in Tests funktioniert und nicht in der Projektumgebung. Vermutlich liegt das größte Problem bei den asyncronen Aufrufen der Events aus der Datenbank. Das Erstellen und Filtern der Events funktioniert wie gewünscht, auch die Kartendarstellung und die Listenansicht machen prinzipiell keine Probleme, allerdings können aktuell keine Daten aus der Datenbank direkt in der Karte/Liste angezeigt werden, daher haben wir uns aus Zeitgründen für statische Events entschieden.  
+Die Applikation ist im Moment lediglich ein Prototyp, der hauptsächlich die Idee der Applikation veranschaulichen soll. Die Verbindung zwischen dem Frontend und der Datenbank hat bisher leider nur in Tests funktioniert und nicht in der Projektumgebung. Vermutlich liegt das größte Problem bei den asyncronen Aufrufen der Events aus der Datenbank. Das Erstellen und Filtern der Events funktioniert wie gewünscht, auch die Kartendarstellung und die Listenansicht machen prinzipiell keine Probleme, allerdings können aktuell keine Daten aus der Datenbank direkt in der Karte/Liste angezeigt werden, daher haben wir uns aus Zeitgründen für statische Events entschieden.  
 
 
 ## Ausblick
 Für die Zukunft wären noch weitere Features denkbar, zB eine Kalenderfunktion, mit der die Events als .ical-Datei exportiert oder in einem internen Kalender angezeigt werden können. Auch sollen Events kommentierbar werden, das Schema wurde bereits darauf vorbereitet, es fehlt lediglich die Ein- und Ausgabe der Kommentare. 
-Um Veranstalerinnen mehr Rechte in der App zu ermöglichen soll es die Möglichkeit zu Benutzeraccounts geben. Die Authentifizierung muss entsprechend abgesichert werden und die personenbezogenen Daten besonders geschützt werden. Für einfache Benutzer soll es keine Accounts geben; das vereinfacht den Zugang und sorgt dafür, dass Möglichst wenige persönliche Daten anfallen.
+Um Veranstalerinnen mehr Rechte in der App zu ermöglichen, soll es die Möglichkeit zu Benutzeraccounts geben. Die Authentifizierung muss entsprechend abgesichert werden und die personenbezogenen Daten besonders geschützt werden. Für einfache Benutzer soll es keine Accounts geben; das vereinfacht den Zugang und sorgt dafür, dass Möglichst wenige persönliche Daten anfallen.
 Ein weiteres Feature wäre eine Swipe-Ansicht für Events, analog zu bekannten Dating-Apps, Durch die Gamification soll ein Anreiz geschaffen werden, sich einfacher mit Events auseinander setzen zu können.
