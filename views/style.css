@@ -21,7 +21,7 @@
   
   /* Style the hamburger menu */
   .topnav a.icon {
-    background: black;
+    background: none;
     display: block;
     position: absolute;
     right: 0;
@@ -30,13 +30,13 @@
   
   /* Add a grey background color on mouse-over */
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: none;
     color: black;
   }
   
   /* Style the active link (or home/logo) */
   .active {
-    background-color: #04AA6D;
+    background-color: #333;
     color: white;
   }
 
@@ -46,6 +46,86 @@
     background-color: white;
     color: black;
   }
+  .halfscreen{
+    width: 100%; 
+    height: 50%; 
+    background-color: white;
+    color: black;
+  }
   .marginBody{
     margin:10px;
 }
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+
+.checkbox{
+   font-family: Arial, sans-serif;
+   font-size: 30px;
+   display: block;
+   margin: 5px;
+   cursor: pointer;
+}
+
+.checkbox input {
+   display: none;
+   position: relative;
+   z-index: -9999;
+}
+
+.checkbox i {
+   -webkit-transition: color 250ms;
+   -moz-transition: color 250ms;
+   -ms-transition: color 250ms;
+   -o-transition: color 250ms;
+   transition: color 250ms;
+   border: solid 2px grey;
+   font-size: 30px;
+   cursor: pointer;
+   width: 37px;
+   height: 37px;
+   text-align: center;
+   line-height: 37px;
+   display: inline-block;
+   background: white;
+   color: transparent;
+}
+
+.checkbox input:checked + i {
+   color: #FFF;
+}
+
+.checkbox input:checked + i.fa-heart{
+   color: crimson;
+}
+.image{
+  border-radius: 250 px;
+}
+.table tr {
+  cursor: pointer;
+}
+.hiddenRow {
+  padding: 0 4px !important;
+  background-color: #eeeeee;
+  font-size: 13px;
+}
+
